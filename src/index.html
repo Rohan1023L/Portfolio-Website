@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohan Ingle</title>
+    <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="../style/skill.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="site-header">
+            <div class="site-header-img">
+                <img src="../assets/icons/logo.png">
+            </div>
+            <div class="site-header-heading">Rohan Ingle</div>
+        </div>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </label>
+
+            <script>
+                function myFunction(x) {
+                    x.classList.toggle("change");
+                }
+            </script>
+
+            <ul>
+                <div class="mobile-nav">
+                    <div class="mobile-nav-in">
+                        <div class="site-header">
+                            <div class="site-header-img">
+                                <img src="../assets/icons/logo.png">
+                            </div>
+                            <div class="site-header-heading">Rohan Ingle</div>
+                        </div>
+                    </div>
+                </div>
+                <li id="label-home"><a class="active" href="#" class="click"><i class="fa-solid fa-house"
+                            id="nav-hide-icon"></i>&nbsp;&nbsp;&nbsp; Home</a>
+                </li>
+                <li><a href="#Skill"><i class="fa-solid fa-shield-halved" id="nav-hide-icon"></i>&nbsp;&nbsp;&nbsp;
+                        Skill's</a></li>
+                <li><a href="#"><i class="fa-solid fa-diagram-project" id="nav-hide-icon"></i>&nbsp;&nbsp;&nbsp;
+                        Project's</a></li>
+                <li><a href="#"><i class="fa-solid fa-address-card" id="nav-hide-icon"></i>&nbsp;&nbsp;&nbsp; About
+                        Me</a></li>
+
+                <div class="web-dependency-lib">
+                    web dependency <br>
+                    version 15.08.25
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- All Pages -->
+    <main>
+        <!-- Landing Page -->
+        <section class="Home" id="Home">
+            <div class="Home-Intro">
+                <h1> Hi, i am Rohan </h1>
+                <p> Feel free to connect with me through the <b style="font-weight: 500;">Social Links</b> below,</p>
+                <div class="Home-Experinece-set">
+
+                    <button class="linkedin-setup">
+                        <div><i class="fa-brands fa-linkedin"></i></div>
+                        LinkedIn
+                    </button>
+
+                    <button class="github-setup">
+                        <div><i class="fa-brands fa-github"></i></div>
+                        Github
+                    </button>
+                </div>
+
+                <div class="Home-line"></div>
+
+                <div class="Home-Slogaon">
+                    <a>Learn More</a>&nbsp;Turning Problems Into Possibilities
+                </div>
+            </div>
+            <div class="Home-Img-Slide">
+
+                <div class="home-intro-img-slider">
+                    <div class="img-slide-component">
+                        <div class="img-navigation">
+                            <div class="left">
+                                <div class="nav-left">
+                                    <div>
+                                        <button class="custom-button"><i class="fa-solid fa-angle-left" id="navleft"
+                                                style="color: rgb(33 33 33);"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-container">
+                                <div class="img-reflect">
+                                    <img src="">
+                                </div>
+                                <div class="img-caption">
+                                    <div class="img-heading-caption">
+                                        <p>Who am i ?</p>
+                                    </div>
+                                    <div class="img-sub-caption">As a web developer, I turn ideas into powerful digital
+                                        experiences.</div>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="nav-left">
+                                    <button class="custom-button">
+                                        <i class="fa-solid fa-angle-right" id="navright"
+                                            style="color: rgb(33 33 33);"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-slide-indigator">
+                        <div id="nav-circle" data-index="0"></div>
+                        <div id="nav-circle-one" data-index="1"></div>
+                        <div id="nav-circle-two" data-index="2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skill Showoff -->
+        <section class="Skill" id="Skill">
+            <div class="section-skill-heading">Skill's</div>
+            <div class="skill-alignment">
+                <div class="skill-line" id="timeline"></div>
+                <div class="skill-content">
+                    <div class="skill-specification">
+                        Design Tool's
+                    </div>
+                    <div class="skill-set">
+                        <div class="skill-container">
+                            <div class="skill-language-container">
+                                <div class="specific-language-img">
+                                    <img src="../assets/icons/figma.png" height="54%" width="54%" />
+                                </div>
+                                <div class="specific-language-caption">
+                                    <div id="language-name">Figma</div>
+                                    <div id="language-full-form">Interface Design Tool</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-container">
+                            <div class="skill-language-container">
+                                <div class="specific-language-img">
+                                    <img src="../assets/icons/canva.png" height="80%" width="80%" />
+                                </div>
+                                <div class="specific-language-caption">
+                                    <div id="language-name">Canva</div>
+                                    <div id="language-full-form"> graphic design</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-specification">
+                        Frontend Domination
+                    </div>
+                    <div class="skill-set">
+                        <div class="skill-container">
+                            <div class="skill-language-container">
+                                <div class="specific-language-img">
+                                    <img src="../assets/icons/html-5.png" height="60%" width="70%" />
+                                </div>
+                                <div class="specific-language-caption">
+                                    <div id="language-name">HTML</div>
+                                    <div id="language-full-form">Hyper Text Markup Language</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-container">
+                            <div class="skill-language-container">
+                                <div class="specific-language-img">
+                                    <img src="../assets/icons/css.png" height="60%" width="70%" />
+                                </div>
+                                <div class="specific-language-caption">
+                                    <div id="language-name">CSS</div>
+                                    <div id="language-full-form">Cascading Style Sheets</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-container">
+                            <div class="skill-language-container">
+                                <div class="specific-language-img">
+                                    <img src="../assets/icons/java-script.png" height="56%" width="60%" />
+                                </div>
+                                <div class="specific-language-caption">
+                                    <div id="language-name">JavaScript</div>
+                                    <div id="language-full-form">Cascading Style Sheets</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-container">
+                            <div class="skill-language-container">
+                                <div class="specific-language-img">
+                                    <img src="../assets/icons/react.png" height="65%" width="65%" />
+                                </div>
+                                <div class="specific-language-caption">
+                                    <div id="language-name">React</div>
+                                    <div id="language-full-form">Cascading Style Sheets</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-specification">
+                        Backend Domination and Database
+                    </div>
+                    <div class="skill-set">
+                        <div class="skill-container">
+                            <div class="skill-language-container">
+                                <div class="specific-language-img">
+                                    <img src="../assets/icons/java.png" height="68%" width="68%" />
+                                </div>
+                                <div class="specific-language-caption">
+                                    <div id="language-name">Spring Boot ( Java )</div>
+                                    <div id="language-full-form">Java Backend Framework</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-container">
+                            <div class="skill-language-container">
+                                <div class="specific-language-img">
+                                    <img src="../assets/icons/Postgresql.png" height="70%" width="70%" />
+                                </div>
+                                <div class="specific-language-caption">
+                                    <div id="language-name">PostgreSQL</div>
+                                    <div id="language-full-form">Relational Database</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Representation -->
+        <section class="Project" id="Project"></section>
+
+        <!-- Education Details -->
+        <section class="About-Me" id="About-Me"></section>
+    </main>
+
+    <!-- Copyright Release -->
+    <footer>
+
+    </footer>
+</body>
+
+<script src="../utils/text-animation.js"></script>
+<script src="../utils/sliding-image.js"></script>
+<script src="../utils/social-media-handling.js"></script>
+<script src="../utils/skill-line.js"></script>
+
+</html>
