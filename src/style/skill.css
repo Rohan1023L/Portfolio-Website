@@ -27,27 +27,11 @@ body {
 .Skill {
     width: 100%;
     display: flex;
+    justify-content: center;
     flex-direction: column;
+    padding-top: 20px;
+    margin-bottom: 30px;
     padding-block: 20px;
-}
-
-.section-skill-heading {
-    text-align: center;
-    margin-inline: 20px;
-    padding-block: 20px;
-    padding-left: 60px;
-    padding-right: 20px;
-    margin-bottom: 20px;
-    font-family: var(--Paragraph-Font);
-    font-size: 18px;
-    font-weight: 800;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
-    text-decoration: 1px underline wavy;
 }
 
 .skill-alignment {
@@ -104,6 +88,7 @@ body {
     font-family: var(--Main-Heading);
     font-size: 18px;
     padding-block: 10px;
+
 }
 
 .skill-container {
@@ -162,16 +147,8 @@ body {
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-    .section-skill-heading {
-        padding-inline: 20px;
-        padding-block: 20px;
-        text-align: left;
-        margin-bottom: 20px;
-        text-decoration: 1px underline wavy;
-    }
-
     .skill-alignment {
-        padding-inline: 38px;
+        padding-inline: 20px;
     }
 
     .skill-specification {
@@ -180,7 +157,13 @@ body {
     }
 
     .skill-container {
-        margin-left: 24px;
+        margin-left: 14px;
+        width: 70px;
+        border-radius: 0% 100% 0% 100% / 76% 30% 70% 24%;
+        -webkit-border-radius: 0% 100% 0% 100% / 76% 30% 70% 24%;
+        -moz-border-radius: 0% 100% 0% 100% / 76% 30% 70% 24%;
+        -ms-border-radius: 0% 100% 0% 100% / 76% 30% 70% 24%;
+        -o-border-radius: 0% 100% 0% 100% / 76% 30% 70% 24%;
     }
 
     #language-name {
@@ -192,17 +175,46 @@ body {
         font-weight: 400;
         font-size: 12px;
     }
-}
 
-@media (min-width: 481px) and (max-width: 767px) {
-    .section-skill-heading {
-        padding-inline: 30px;
-        padding-block: 10px;
-        text-align: center;
-        margin-bottom: 20px;
+    .specific-language-caption {
+        display: none;
     }
 }
 
+
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
 
-@media (min-width: 890px) and (max-width: 1025px) {}
+@media (min-width: 480px) and (max-width: 780px) {
+    .skill-alignment {
+        padding-inline: 20px;
+    }
+
+    .skill-specification {
+        padding-left: 14px;
+        line-height: 1;
+    }
+
+    .skill-container {
+        margin-left: 14px;
+        width: 70px;
+        border-radius: 0% 100% 0% 100% / 76% 30% 70% 24%;
+        -webkit-border-radius: 0% 100% 0% 100% / 76% 30% 70% 24%;
+        -moz-border-radius: 0% 100% 0% 100% / 76% 30% 70% 24%;
+        -ms-border-radius: 0% 100% 0% 100% / 76% 30% 70% 24%;
+        -o-border-radius: 0% 100% 0% 100% / 76% 30% 70% 24%;
+    }
+
+    #language-name {
+        font-size: 14px;
+    }
+
+    #language-full-form {
+        font-family: var(--Paragraph-Font);
+        font-weight: 400;
+        font-size: 12px;
+    }
+
+    .specific-language-caption {
+        display: none;
+    }
+}

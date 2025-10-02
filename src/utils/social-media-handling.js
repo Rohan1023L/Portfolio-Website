@@ -1,15 +1,15 @@
 const links = {
-    linkedin: "https://www.linkedin.com/in/rohan1023l/",
-    github: "https://github.com/Rohan1023L"
+    uba: "http://uba.stvincentngp.edu.in",
+    palfta: "https://github.com/Rohan1023L"
   };
 
-  const linkedinBtn = document.querySelector(".linkedin-setup");
-  const githubBtn = document.querySelector(".github-setup");
+  const Uba = document.querySelector("#UBA");
+  const Palfta = document.querySelector(".github-setup");
 
-  linkedinBtn.addEventListener("click", () => {
-    window.open(links.linkedin, "_blank");
+  Uba.addEventListener("click", () => {
+    window.open(links.uba, "_blank");
   });
 
-  githubBtn.addEventListener("click", () => {
-    window.open(links.github, "_blank");
+  Palfta.addEventListener("click", () => {
+    window.open(links.palfta, "_blank");
   });

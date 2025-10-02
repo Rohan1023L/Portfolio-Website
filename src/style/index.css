@@ -389,7 +389,7 @@ a:active {
     justify-content: start;
     padding-left: 16px;
     font-family: var(--Paragraph-Font);
-    width: 146px;
+    padding-inline: 14px;
     height: 40px;
     border-radius: 4px;
     border: 0;
@@ -409,6 +409,64 @@ a:active {
 
 }
 
+.view-work,
+.download-resume {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 16px;
+    font-family: var(--Paragraph-Font);
+    padding-inline: 14px;
+    width: 150px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid black;
+    background-color: transparent;
+    letter-spacing: 1.5px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    box-shadow: rgb(20, 20, 20)0px 4px 0px 0px;
+    color: black;
+    cursor: pointer;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+
+.view-work div,
+.download-resume div {
+    border-right: 1px solid;
+    border-color: black;
+    padding-right: 8px;
+    margin-right: 8px;
+}
+
+.view-work:hover,
+.download-resume:hover {
+    box-shadow: rgb(20, 20, 20) 0px 4px 0px 0px;
+}
+
+.view-work:active,
+.download-resume:active {
+    background-color: transparent;
+    box-shadow: rgb(20, 20, 20) 0px 0px 0px 0px;
+    transform: translateY(5px);
+    transition: 200ms;
+}
+
+.view-work div,
+.download-resume div {
+    border-right: 1px solid;
+    border-color: black;
+    padding-right: 8px;
+    margin-right: 8px;
+}
+
+
 .linkedin-setup:hover {
     box-shadow: rgb(7, 71, 155) 0px 4px 0px 0px;
 }
@@ -427,13 +485,14 @@ a:active {
     margin-right: 8px;
 }
 
+
 .github-setup {
     display: flex;
     align-items: center;
     justify-content: start;
     padding-left: 16px;
     font-family: var(--Paragraph-Font);
-    width: 146px;
+    padding-inline: 14px;
     height: 40px;
     border-radius: 4px;
     border: 0;
@@ -530,8 +589,7 @@ a:active {
 }
 
 #nav-circle,
-#nav-circle-one,
-#nav-circle-two {
+#nav-circle-one {
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -542,8 +600,7 @@ a:active {
 }
 
 #nav-circle.active,
-#nav-circle-one.active,
-#nav-circle-two.active {
+#nav-circle-one.active {
     background-color: black;
 }
 
@@ -630,12 +687,13 @@ a:active {
     color: rgb(33 33 33);
     margin-bottom: 0;
     margin-top: 2rem;
+    text-align: center;
 }
 
 .img-sub-caption {
     overflow: hidden;
     font-family: var(--Paragraph-Font);
-    font-size: .875rem;
+    font-size: .975rem;
     font-weight: 600;
     letter-spacing: 0;
     line-height: 1.25rem;
@@ -707,8 +765,7 @@ a:active {
     }
 
     #nav-circle,
-    #nav-circle-one,
-    #nav-circle-two {
+    #nav-circle-one {
         width: 10px;
         height: 10px;
         border-radius: 50%;
@@ -719,8 +776,7 @@ a:active {
     }
 
     #nav-circle.active,
-    #nav-circle-one.active,
-    #nav-circle-two.active {
+    #nav-circle-one.active {
         background-color: black;
     }
 
@@ -775,10 +831,12 @@ a:active {
         align-items: center;
         justify-content: center;
         line-height: 2rem;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         color: rgb(33 33 33);
         margin-bottom: 0;
         margin-top: 1rem;
+        text-align: center;
+
     }
 
     .img-sub-caption {
@@ -819,7 +877,7 @@ a:active {
 @media (min-width: 481px) and (max-width: 767px) {
 
     .web-dependency-lib {
-        bottom: 58px;
+        bottom: 10px;
     }
 
     .Home {
@@ -880,8 +938,7 @@ a:active {
     }
 
     #nav-circle,
-    #nav-circle-one,
-    #nav-circle-two {
+    #nav-circle-one {
         width: 10px;
         height: 10px;
         border-radius: 50%;
@@ -892,8 +949,7 @@ a:active {
     }
 
     #nav-circle.active,
-    #nav-circle-one.active,
-    #nav-circle-two.active {
+    #nav-circle-one.active {
         background-color: black;
     }
 
@@ -949,10 +1005,11 @@ a:active {
         align-items: center;
         justify-content: center;
         line-height: 2rem;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         color: rgb(33 33 33);
         margin-bottom: 0;
         margin-top: 0.456rem;
+        text-align: center;
     }
 
     .img-sub-caption {
@@ -983,7 +1040,7 @@ a:active {
     }
 
     .web-dependency-lib {
-        bottom: 58px;
+        bottom: 10px;
     }
 
     ul {
@@ -1062,8 +1119,7 @@ a:active {
     }
 
     #nav-circle,
-    #nav-circle-one,
-    #nav-circle-two {
+    #nav-circle-one {
         width: 10px;
         height: 10px;
         border-radius: 50%;
@@ -1071,11 +1127,14 @@ a:active {
         margin: 0 5px;
         display: inline-block;
         transition: background-color 0.3s ease;
+        -webkit-transition: background-color 0.3s ease;
+        -moz-transition: background-color 0.3s ease;
+        -ms-transition: background-color 0.3s ease;
+        -o-transition: background-color 0.3s ease;
     }
 
     #nav-circle.active,
-    #nav-circle-one.active,
-    #nav-circle-two.active {
+    #nav-circle-one.active {
         background-color: black;
     }
 
@@ -1128,16 +1187,16 @@ a:active {
 
     .img-heading-caption {
         font-family: var(--Paragraph-Font);
-        font-weight: 600;
+        font-weight: 700;
         display: flex;
         align-items: center;
         justify-content: center;
-        line-height: 1.5rem;
-        font-size: 1.3rem;
+        line-height: 1rem;
+        font-size: 1rem;
         color: rgb(33 33 33);
         margin-bottom: 0;
-        margin-top: 0.456rem;
-
+        margin-top: 0.856rem;
+        text-align: center;
     }
 
     .img-sub-caption {
@@ -1155,3 +1214,4 @@ a:active {
         margin-top: 0.856rem;
     }
 }
+

@@ -1,0 +1,799 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&family=Noto+Sans+Mono:wght@100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+
+:root {
+    --Main-Heading: "Pacifico", cursive;
+    --Paragraph-Font: "Quicksand", sans-serif;
+    --Home-Intro: "Poppins", sans-serif;
+}
+
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.About-Me {
+    width: 100%;
+    display: flex;
+    margin-bottom: 30px;
+    padding-block: 20px;
+}
+
+.About-Me>div {
+    width: 50%;
+    padding-inline: 20px;
+}
+
+.about-me-personal-info {
+    display: flex;
+    align-items: center;
+    padding-block: 10px;
+    padding-left: 20px;
+}
+
+.about-us-my-photo {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 1px solid black;
+
+}
+
+.about-us-information {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 20px;
+}
+
+.about-us-name {
+    font-size: 18px;
+    font-weight: 900;
+    font-family: var(--Paragraph-Font);
+}
+
+.about-us-desigination {
+    font-size: 14px;
+    font-family: var(--Home-Intro);
+    color: #444746;
+}
+
+.social-media-link {
+    display: flex;
+    margin-top: 6px;
+    font-size: 18px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.social-media-link a {
+    font-size: 14px;
+    font-family: var(--Paragraph-Font);
+    cursor: pointer;
+    text-decoration: none;
+    color: #444746;
+    font-weight: 400;
+}
+
+.about-us-description,
+.about-us-internship {
+    margin-top: 10px;
+    text-align: justify;
+    font-family: var(--Home-Intro);
+    font-size: 14px;
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.detail-text {
+    font-size: 12px;
+    color: blue;
+    text-decoration: underline;
+    font-family: var(--Paragraph-Font);
+    cursor: pointer;
+}
+
+.line-break {
+    width: 100%;
+    height: 1px;
+    border: 1px solid #f1f1f3;
+}
+
+.about-us-description.open,
+.about-us-internship.open {
+    display: block;
+    transition: all 0.3s ease-in-out;
+    padding-inline: 22px;
+    padding-block: 17px;
+}
+
+.detail-text {
+    cursor: pointer;
+    color: #0077cc;
+    margin-top: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.detail-text span {
+    cursor: pointer;
+    margin: 0 5px;
+    color: #444;
+    font-weight: bold;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+    -webkit-transition: color 0.3s ease, font-weight 0.3s ease;
+    -moz-transition: color 0.3s ease, font-weight 0.3s ease;
+    -ms-transition: color 0.3s ease, font-weight 0.3s ease;
+    -o-transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+.detail-text span:hover {
+    color: #0077cc;
+}
+
+.detail-text span.active {
+    color: #0077cc;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.icon-with-input {
+    display: flex;
+    margin-top: 20px;
+}
+
+.icon-for-about-us {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us-heading {
+    font-family: var(--Paragraph-Font);
+    padding-block: 10px;
+    font-weight: 600;
+}
+
+#contact-form {
+    padding-block: 10px;
+}
+
+#input-field {
+    height: 40px;
+    width: 200px;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding-inline: 10px;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+#input-button {
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: var(--Paragraph-Font);
+    background: transparent;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+#input-button:hover {
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.about-us-contact-form {
+    display: flex;
+}
+
+.about-us-contact-form>div {
+    width: 50%;
+}
+
+.about-us-images {
+    border: 2px dashed transparent;
+    border-left-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us-images img {
+    width: 200px;
+}
+
+#status {
+    height: 30px;
+}
+
+.about-us-heading-slogen {
+    font-size: 14px;
+    font-family: var(--Paragraph-Font);
+}
+
+#line-break-adjust {
+    display: flex;
+    gap: 8px;
+}
+
+.about-us-internship {
+    display: none;
+}
+
+.internship-card {
+    font-family: var(--Paragraph-Font);
+    margin-block: 10px;
+}
+
+.internship-logo-name-date {
+    display: flex;
+    position: relative;
+}
+
+.internship-company-logo img {
+    height: 100%;
+    width: 100%;
+}
+
+.internship-company-details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.intenrship-company-name {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.internship-company-logo {
+    background-position: 50%;
+    background-size: cover;
+    object-position: center;
+    object-fit: cover;
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+.internship-company-name-and-joining {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.internship-company-joining {
+    width: 180px;
+}
+
+.internship-company-role #pencil-icon {
+    display: none;
+    margin-right: 10px;
+}
+
+.detail-text {
+    margin-bottom: 10px;
+}
+
+.about-us-my-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 4px;
+    margin-bottom: 14px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.about-us-my-photo img {
+    background-position: 50%;
+    background-size: cover;
+    object-position: center;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.start-rating-conatiner {
+    margin-block: 20px;
+}
+
+#star-count {
+    font-family: var(--Paragraph-Font);
+    padding-inline: 20px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.star-rating {
+    white-space: nowrap;
+
+}
+
+.star-rating [type="radio"] {
+    appearance: none;
+}
+
+.star-rating i {
+    font-size: 1.2em;
+    transition: 0.3s;
+}
+
+.star-rating label:is(:hover, :has(~ :hover)) i {
+    transform: scale(1.35);
+    color: #fffdba;
+    animation: jump 0.5s calc(0.3s + (var(--i) - 1) * 0.15s) alternate infinite;
+}
+
+.star-rating label:has(~ :checked) i {
+    color: #faec1b;
+    text-shadow: 0 0 2px #ffffff, 0 0 10px #ffee58;
+}
+
+@keyframes jump {
+
+    0%,
+    50% {
+        transform: translatey(0) scale(1.35);
+    }
+
+    100% {
+        transform: translatey(-15%) scale(1.35);
+    }
+}
+
+footer {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F0F0F0;
+    padding: 20px;
+    font-family: var(--Paragraph-Font);
+    font-size: 14px;
+    font-weight: 600;
+    color: #333333;
+}
+
+@media (min-width: 2024px) and (max-width: 4000px) {
+    html {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body {
+        width: 2000px;
+    }
+
+    header {
+        font-family: var(--Main-Heading);
+        display: flex;
+        justify-content: center;
+        /* centers content inside header */
+        align-items: center;
+        width: 2000px;
+        /* set your desired header width */
+        margin: 0 auto;
+        /* center the header horizontally */
+        padding: 10px 20px;
+        border-bottom: 1px solid #747775;
+        background: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+    }
+
+    .internship-company-role #pencil-icon {
+        display: none;
+        margin-right: 10px;
+    }
+
+
+
+    .Project {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #input-field {
+        width: 260px;
+    }
+
+    .projects-details {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1880px) and (max-width: 2024px) {
+    .projects-details {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1880px) {
+    .about-us-description.open {
+        max-height: 300px;
+        padding: 0px;
+        padding-bottom: 10px;
+        overflow-y: auto;
+
+    }
+
+    .projects-details {
+        display: flex;
+        justify-content: center;
+    }
+
+    #input-field {
+        width: 230px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+
+    #contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #line-break-adjust {
+        display: flex;
+        justify-content: center;
+    }
+
+    .icon-with-input {
+        align-items: flex-start;
+        width: 50%;
+    }
+
+    .about-us-heading {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-us-images {
+        display: none;
+    }
+
+
+    .detail-text {
+        margin-top: 10px;
+    }
+
+    .social-media-link {
+        flex-wrap: wrap;
+    }
+
+    .about-us-contact-form>div {
+        width: 100%;
+    }
+
+    .about-us-description.open {
+        max-height: 140px;
+        padding: 0px;
+        padding-bottom: 10px;
+        overflow-y: auto;
+    }
+
+
+    #input-field {
+        width: 280px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .About-Me {
+        flex-direction: column;
+        margin-bottom: 0px;
+        padding-top: 10px;
+        padding-bottom: 0;
+    }
+
+    .about-us-images {
+        display: none;
+    }
+
+    .about-us-contact-form>div {
+        width: 100%;
+    }
+
+    .About-Me>div {
+        width: 100%;
+    }
+
+    .about-us-contact-form {
+        margin-left: 30px;
+    }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .About-Me {
+        flex-direction: column;
+        margin-bottom: 0px;
+        padding-top: 10px;
+        padding-bottom: 0;
+    }
+
+    .About-Me>div {
+        width: 100%;
+    }
+
+    .about-us-images {
+        display: none;
+    }
+
+    .about-us-contact-form>div {
+        width: 100%;
+    }
+
+    .about-me-personal-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .about-us-information {
+        margin-inline: 0px;
+    }
+
+    .about-us-contact-form {
+        margin-inline: 20px;
+    }
+
+
+
+    .social-media-link {
+        flex-wrap: wrap;
+    }
+
+    .social-media-link .detail-text {
+        margin-top: 10px;
+    }
+
+    #status {
+        padding-bottom: 10px;
+    }
+
+    .about-us-contact-form>div {
+        width: 100%;
+    }
+
+    #input-field {
+        width: 220px;
+    }
+
+    .about-us-description.open {
+        max-height: 500px;
+        padding: 0px;
+        padding-bottom: 10px;
+    }
+
+
+    .detail-text {
+        margin-bottom: 10px;
+    }
+
+    .about-me-personal-info {
+        padding-bottom: 0;
+    }
+
+    .about-us-description.open {
+        max-height: 500px;
+        padding: 0px;
+        padding-bottom: 10px;
+
+    }
+
+    .internship-card {
+        margin-bottom: 10px;
+    }
+
+    .intenrship-company-name {
+        font-size: 12px;
+        margin-bottom: 4px;
+    }
+
+    .internship-company-name-and-joining {
+        flex-direction: column;
+    }
+
+    .internship-company-role,
+    .internship-company-joining {
+        font-size: 12px;
+
+    }
+
+    .internship-company-role {
+        display: flex;
+        margin-top: 2px;
+    }
+
+    .internship-company-role #pencil-icon {
+        display: flex;
+        margin-right: 10px;
+    }
+
+    .internship-company-logo {
+        background-position: 50%;
+        background-size: cover;
+        object-position: center;
+        object-fit: cover;
+        height: 50px;
+        width: 56px;
+        margin-right: 10px;
+    }
+
+    .detail-text {
+        margin-bottom: 10px;
+    }
+
+    .about-us-description.open,
+    .about-us-internship.open {
+        display: block;
+        transition: all 0.3s ease-in-out;
+        padding-inline: 8px;
+        padding-block: 0px;
+        font-size: 12px;
+    }
+
+
+
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .About-Me {
+        flex-direction: column;
+        margin-bottom: 0px;
+        padding-top: 10px;
+        padding-bottom: 0;
+    }
+
+    .About-Me>div {
+        width: 100%;
+    }
+
+    .about-us-images {
+        display: none;
+    }
+
+    .about-us-contact-form>div {
+        width: 100%;
+    }
+
+    .about-me-personal-info {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-inline: 0;
+    }
+
+    .about-us-information {
+        margin-inline: 0px;
+    }
+
+    .about-us-my-photo {
+        width: 100px;
+        height: 100px;
+        border-radius: 4px;
+        margin-bottom: 14px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+    }
+
+    .social-media-link {
+        flex-wrap: wrap;
+    }
+
+    .social-media-link .detail-text {
+        margin-top: 10px;
+    }
+
+    #status {
+        padding-bottom: 10px;
+    }
+
+    .about-us-contact-form>div {
+        width: 100%;
+    }
+
+    #input-field {
+        width: 220px;
+    }
+
+    .about-me-personal-info {
+        padding-bottom: 0;
+    }
+
+    .about-us-description.open {
+        max-height: 500px;
+        padding: 0px;
+        padding-bottom: 10px;
+
+    }
+
+    .internship-card {
+        margin-bottom: 10px;
+    }
+
+    .intenrship-company-name {
+        font-size: 12px;
+        margin-bottom: 4px;
+    }
+
+    .internship-company-name-and-joining {
+        flex-direction: column;
+    }
+
+    .internship-company-role,
+    .internship-company-joining {
+        font-size: 12px;
+
+    }
+
+    .internship-company-role {
+        display: flex;
+        margin-top: 2px;
+    }
+
+    .internship-company-role #pencil-icon {
+        display: flex;
+        margin-right: 10px;
+    }
+
+    .internship-company-logo {
+        background-position: 50%;
+        background-size: cover;
+        object-position: center;
+        object-fit: cover;
+        height: 50px;
+        width: 56px;
+        margin-right: 10px;
+    }
+
+    .about-us-description.open,
+    .about-us-internship.open {
+        display: block;
+        transition: all 0.3s ease-in-out;
+        padding-inline: 8px;
+        padding-block: 0px;
+        font-size: 13px;
+    }
+
+
+}

@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&family=Noto+Sans+Mono:wght@100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+
+:root {
+    --Main-Heading: "Pacifico", cursive;
+    --Paragraph-Font: "Quicksand", sans-serif;
+    --Home-Intro: "Poppins", sans-serif;
+}
+
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.projects-details {
+    padding-block: 20px;
+    display: flex;
+    padding-inline: 40px;
+    margin-bottom: 30px;
+
+}
+
+.project-card {
+    width: 759px;
+    height: 500px;
+    margin: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.project-card-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 380px;
+}
+
+.project-card-image img {
+    height: 98%;
+    width: 100%;
+
+}
+
+.project-card-description {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+.project-name {
+    font-family: var(--Paragraph-Font);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+.uba-button {
+    margin-top: 10px;
+    height: 36px;
+    width: 160px;
+    border: 1px solid black;
+    display: flex;
+    cursor: pointer;
+}
+
+.uba-button-name {
+    font-family: var(--Paragraph-Font);
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: capitalize;
+    width: 76%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.uba-button-logo {
+    border: 1px solid transparent;
+    border-left-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24%;
+}
+
+.heading-for-section {
+    display: flex;
+}
+
+#heading-section-icon {
+    padding-inline: 20px;
+    padding-block: 30px;
+    margin-right: 10px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+    font-weight: 200;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border-radius: 6px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    border: 1px solid black;
+}
+
+#heading-name {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-family: var(--Paragraph-Font);
+    font-weight: 700;
+    font-size: 16px;
+    width: 120px;
+    height: 30px;
+    padding-inline: 20px;
+    border-radius: 4px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    margin-bottom: 6px;
+    border: 1px solid black;
+}
+
+.heading-section-sentence {
+    font-family: var(--Paragraph-Font);
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+#heading-subname {
+    color: #444746;
+    text-decoration: 1px underline;
+}
+
+@media (min-width: 1281px) {}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .projects-details {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .projects-details {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-inline: 0px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .projects-details {
+        flex-wrap: wrap;
+        align-items: center;
+        padding-inline: 0px;
+    }
+
+    .project-card-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 190px;
+    }
+
+    .project-card-image img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .project-card {
+        width: 100%;
+        height: 310px;
+        padding-bottom: 20px;
+        margin-block: 10px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+
+    .project-name {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .project-card-description {
+        height: 40%;
+    }
+
+    #heading-name {
+        justify-content: left;
+    }
+
+    #heading-section-icon {
+        margin-left: 40px;
+    }
+
+
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .projects-details {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-inline: 0px;
+    }
+
+    .project-card-image {
+        height: 230px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .project-card-image img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .project-card {
+        width: 470px;
+        height: 360px;
+        padding-bottom: 20px;
+        margin-block: 20px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+
+    .project-name {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .project-card-description {
+        height: 38%;
+    }
+
+    .heading-for-section {
+        margin-top: 20px;
+    }
+
+    #heading-name {
+        justify-content: left;
+    }
+
+    #heading-section-icon {
+        margin-left: 36px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .projects-details {
+        flex-wrap: wrap;
+        align-items: center;
+        padding-inline: 0px;
+    }
+
+    .project-card-image {
+        height: 190px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .project-card-image img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .project-card {
+        width: 100%;
+        height: 310px;
+        padding-bottom: 20px;
+        margin-block: 10px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+
+    .project-name {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .project-card-description {
+        height: 40%;
+    }
+
+    #heading-name {
+        justify-content: left;
+    }
+
+    #heading-section-icon {
+        margin-left: 20px;
+    }
+
+}

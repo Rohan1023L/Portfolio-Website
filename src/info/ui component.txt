@@ -1,0 +1,9 @@
+ <button class="linkedin-setup">
+ <div><i class="fa-solid fa-briefcase"></i></div>
+ View Work
+ </button>
+
+<button class="github-setup">
+<div><i class="fa-solid fa-file"></i></div>
+Download Resume
+</button>
