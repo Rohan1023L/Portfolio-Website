@@ -130,7 +130,8 @@ body {
 .detail-text span {
     cursor: pointer;
     margin: 0 5px;
-    color: #444;
+    /* color: #444; */
+    color: #0077cc;
     font-weight: bold;
     transition: color 0.3s ease, font-weight 0.3s ease;
     -webkit-transition: color 0.3s ease, font-weight 0.3s ease;
@@ -145,7 +146,8 @@ body {
 }
 
 .detail-text span.active {
-    color: #2575fc;
+    /* color: #2575fc; */
+    color: #444;
     font-weight: bold;
     text-decoration: underline;
 }

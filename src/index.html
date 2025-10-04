@@ -61,6 +61,17 @@
                         About
                         Me</a></li>
 
+                <script>
+                    const navLinksClick = document.querySelectorAll("nav ul li a");
+
+                    navLinksClick.forEach(link => {
+                        link.addEventListener("click", function () {
+                            navLinksClick.forEach(l => l.classList.remove("active"));
+                            this.classList.add("active");
+                        });
+                    });
+                </script>
+
                 <div class="web-dependency-lib">
                     web dependency <br>
                     version 15.08.25
@@ -68,6 +79,10 @@
             </ul>
         </nav>
     </header>
+
+    <div class="scroll-top" id="scrollTopBtn">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
 
     <!-- All Pages -->
     <main>
@@ -438,9 +453,7 @@
 
 
                             <span style="color: #444746;font-size: 8px;">&#9679;</span>
-
                             &nbsp;&nbsp;
-
                             <span class="detail-text">Read More</span>
                         </div>
                     </div>
@@ -618,7 +631,6 @@
                     heart.style.animation = '';
                 }, 800);
             }, 1000);
-
         </script>
     </footer>
 </body>
@@ -630,6 +642,7 @@
 <script src="../utils/download-resume.js"></script>
 <script src="../utils/social-media-handling.js"></script>
 <script src="../utils/skill-line.js"></script>
+<script src="../utils/scroll-to-top.js"></script>
 <script src="../utils/navigation-and-header.js"></script>
 
 </html>

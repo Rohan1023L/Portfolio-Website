@@ -1,5 +1,3 @@
-
-
 downloadBtn.addEventListener('click', () => {
     const fileUrl = "https://drive.google.com/uc?export=download&id=17gWCQPnUwfVYzPe_MAih8OZpEEvTRFOE";
 
@@ -18,3 +16,4 @@ downloadBtn.addEventListener('click', () => {
         downloadBtn.disabled = false;
     }, 3000);
 });
+

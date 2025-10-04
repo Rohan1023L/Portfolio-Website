@@ -1,8 +1,8 @@
 const container = document.querySelector(".site-header-heading");
-const texts = ["Rohan Ingle", "Rohan's Invention's"];
+const texts = ["Rohan Ingle", "Rohan1023L"];
 const typingSpeed = 150;
 const deletingSpeed = 75;
-const blinkDuration = 1500; // 3 blinks * 0.5s
+const blinkDuration = 1500; 
 
 let textIndex = 0, charIndex = 0, isDeleting = false;
 
