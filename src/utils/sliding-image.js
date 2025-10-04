@@ -1,12 +1,12 @@
 // JavaScript
 const slides = [
   {
-    img: "assets/images/Who-Am-I.png",
+    img: "https://cdn.jsdelivr.net/gh/Rohan1023L/Portfolio-Website@main/src/assets/images/Who-Am-I.png",
     heading: "I Focus On Action, Not Reward",
     caption: "<div>I code with dedication, leaving the outcome to excellence.</div>",
   },
   {
-    img: "assets/images/What-I-Do.png",
+    img: "https://cdn.jsdelivr.net/gh/Rohan1023L/Portfolio-Website@main/src/assets/images/What-I-Do.png",
     heading: "Purpose In Pixels, Meaning In Lines.",
     caption: "<div>Every element crafted with meaning.</div>",
   }
