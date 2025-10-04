@@ -6,7 +6,7 @@ let currentMode = window.innerWidth >= 1024 ? "desktop" : "mobile";
 
 function setOptions(active = "1") {
     ReadContext.innerHTML = `
-        <span data-value="1" class="${active === "1" ? "active" : ""}">Education Details</span>
+        <span data-value="1" class="${active === "1" ? "active" : ""}">Personal Information</span>
         <span style="color: #444746;font-size: 10px;">/</span>
         <span data-value="2" class="${active === "2" ? "active" : ""}">Internship Details</span>
         <span style="color: #444746;font-size: 10px;">/</span>

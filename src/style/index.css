@@ -25,68 +25,6 @@ body {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.slide-left {
-    animation: slideLeft 0.5s ease forwards;
-}
-
-.slide-right {
-    animation: slideRight 0.5s ease forwards;
-}
-
-/* Soft, smooth slide animations */
-.slide-left {
-    animation: slideLeftSmooth 0.8s ease-out forwards;
-}
-
-.slide-right {
-    animation: slideRightSmooth 0.8s ease-out forwards;
-}
-
-@keyframes slideLeftSmooth {
-    0% {
-        transform: translateX(60px);
-        opacity: 0;
-    }
-
-    40% {
-        transform: translateX(-10px);
-        opacity: 0.6;
-    }
-
-    70% {
-        transform: translateX(5px);
-        opacity: 0.9;
-    }
-
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slideRightSmooth {
-    0% {
-        transform: translateX(-60px);
-        opacity: 0;
-    }
-
-    40% {
-        transform: translateX(10px);
-        opacity: 0.6;
-    }
-
-    70% {
-        transform: translateX(-5px);
-        opacity: 0.9;
-    }
-
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-
 header {
     font-family: var(--Main-Heading);
     display: flex;
@@ -104,14 +42,43 @@ header {
     background: white;
 }
 
-/* Home Page */
+#heart {
+    display: inline-block;
+    font-size: 14px;
+    transform-origin: center;
+    transition: transform 0.2s;
+}
 
+@keyframes beat {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.3);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    75% {
+        transform: scale(1.3);
+    }
+}
+
+
+/* Home Page */
 .site-header {
     display: flex;
     align-items: center;
+    width: 200px;
 }
 
 .site-header-img {
+    width: 42px;
     display: flex;
     align-items: center;
     justify-self: center;
@@ -133,7 +100,7 @@ header {
     color: #444746;
     font-weight: 200;
     white-space: nowrap;
-    width: 136px;
+    width: 156px;
 }
 
 .underscore {
@@ -184,7 +151,6 @@ nav {
     margin: 5px 0;
     transition: 0.4s;
     border-radius: 10px;
-
 }
 
 .change .bar1 {
@@ -1088,7 +1054,6 @@ a:active {
 
     }
 
-
     .Home-line {
         width: 100%;
     }
@@ -1214,4 +1179,3 @@ a:active {
         margin-top: 0.856rem;
     }
 }
-

@@ -14,6 +14,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
+
 <body>
 
     <!-- Navigation Bar -->
@@ -49,14 +50,15 @@
                         </div>
                     </div>
                 </div>
-                <li id="label-home"><a class="active" href="#" class="click"><i class="fa-solid fa-house"
+                <li id="label-home"><a class="active" href="#Home" class="click"><i class="fa-solid fa-house"
                             id="nav-hide-icon"></i>&nbsp;&nbsp;&nbsp; Home</a>
                 </li>
                 <li><a href="#Skill"><i class="fa-solid fa-shield-halved" id="nav-hide-icon"></i>&nbsp;&nbsp;&nbsp;
                         Skill's</a></li>
-                <li><a href="#"><i class="fa-solid fa-diagram-project" id="nav-hide-icon"></i>&nbsp;&nbsp;&nbsp;
+                <li><a href="#Project"><i class="fa-solid fa-diagram-project" id="nav-hide-icon"></i>&nbsp;&nbsp;&nbsp;
                         Project's</a></li>
-                <li><a href="#"><i class="fa-solid fa-address-card" id="nav-hide-icon"></i>&nbsp;&nbsp;&nbsp; About
+                <li><a href="#About-Me"><i class="fa-solid fa-address-card" id="nav-hide-icon"></i>&nbsp;&nbsp;&nbsp;
+                        About
                         Me</a></li>
 
                 <div class="web-dependency-lib">
@@ -73,8 +75,9 @@
         <section class="Home" id="Home">
             <div class="Home-Intro">
                 <h1> Hi, i am Rohan </h1>
-                <p> Computer Engineering | Full Stack Developer ,
-                    <br>Crafting websites with UI/UX, Frameworks, APIs & Databases.
+                <p> Computer Engineering | Full Stack Developer
+                    <br>Crafting Web Applications with Clean UI, Robust frameworks, Powerful backend solutions.
+
                 </p>
                 <div class="Home-Experinece-set">
 
@@ -83,15 +86,7 @@
                         View Work
                     </button>
 
-                    <script>
-                        const viewWork = document.querySelector('.view-work');
-                        viewWork.addEventListener('click', () => {
-                            window.location.href = "#Project";
-                        });
-                    </script>
-
-
-                    <button class="download-resume">
+                    <button class="download-resume" id="downloadBtn">
                         <div><i class="fa-solid fa-download"></i></div>
                         Resume
                     </button>
@@ -142,7 +137,7 @@
                 </div>
             </div>
         </section>
-
+        <span id="Skill" style="padding: 2px;"></span>
         <div class="heading-for-section">
             <div id="heading-section-icon"><i class="fa-solid fa-shield-halved"></i></div>
 
@@ -155,7 +150,7 @@
         <div class="line-break"></div>
 
         <!-- Skill Showoff -->
-        <section class="Skill" id="Skill">
+        <section class="Skill">
             <div class="skill-alignment">
                 <div class="skill-line" id="timeline"></div>
                 <div class="skill-content">
@@ -197,7 +192,7 @@
                                     <img src="../assets/icons/html-5.png" height="60%" width="70%" />
                                 </div>
                                 <div class="specific-language-caption">
-                                    <div id="language-name">HTML</div>
+                                    <div id="language-name">HTML5</div>
                                     <div id="language-full-form">Hyper Text Markup Language</div>
                                 </div>
                             </div>
@@ -208,7 +203,7 @@
                                     <img src="../assets/icons/css.png" height="60%" width="70%" />
                                 </div>
                                 <div class="specific-language-caption">
-                                    <div id="language-name">CSS</div>
+                                    <div id="language-name">CSS3</div>
                                     <div id="language-full-form">Cascading Style Sheets</div>
                                 </div>
                             </div>
@@ -241,17 +236,32 @@
                         Backend Domination and Database
                     </div>
                     <div class="skill-set">
+                        <!-- Node.js -->
                         <div class="skill-container">
                             <div class="skill-language-container">
                                 <div class="specific-language-img">
-                                    <img src="../assets/icons/java.png" height="68%" width="68%" />
+                                    <img src="../assets/icons/nodejs.png" height="68%" width="58%" />
                                 </div>
                                 <div class="specific-language-caption">
-                                    <div id="language-name">Spring Boot ( Java )</div>
-                                    <div id="language-full-form">Java Backend Framework</div>
+                                    <div id="language-name">Node.js</div>
+                                    <div id="language-full-form">JavaScript Runtime Environment</div>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Express.js -->
+                        <div class="skill-container">
+                            <div class="skill-language-container">
+                                <div class="specific-language-img">
+                                    <img src="../assets/icons/express.png" height="56%" width="100%" />
+                                </div>
+                                <div class="specific-language-caption">
+                                    <div id="language-name">Express.js</div>
+                                    <div id="language-full-form">Node.js Web Framework</div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="skill-container">
                             <div class="skill-language-container">
                                 <div class="specific-language-img">
@@ -260,17 +270,6 @@
                                 <div class="specific-language-caption">
                                     <div id="language-name">PostgreSQL</div>
                                     <div id="language-full-form">Relational Database</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-container">
-                            <div class="skill-language-container">
-                                <div class="specific-language-img">
-                                    <img src="assets/icons/api.webp" height="68%" width="68%" />
-                                </div>
-                                <div class="specific-language-caption">
-                                    <div id="language-name">API Development</div>
-                                    <div id="language-full-form">RESTful API C/I</div>
                                 </div>
                             </div>
                         </div>
@@ -296,6 +295,9 @@
             </div>
         </section>
 
+        <span id="Project" style="padding: 2px;"></span>
+
+
         <div class="heading-for-section">
             <div id="heading-section-icon"><i class="fa-solid fa-diagram-project"></i></div>
 
@@ -308,34 +310,94 @@
         <div class="line-break"></div>
 
         <!--Projects Representation-->
-        <section class="Project" id="Project">
-            <div class="projects-details">
-                <div class="project-card">
-                    <div class="project-card-image">
-                        <img src="/assets/images/project/UBA.png">
-                    </div>
-                    <div class="project-card-description">
-                        <div class="project-name">Unnat Bharat Abhiyan</div>
-                        <div class="uba-button" id="UBA">
-                            <div class="uba-button-name">View Website</div>
-                            <div class="uba-button-logo"><i class="fa-solid fa-angles-right"></i></div>
+        <section class="Project">
+            <div class="project-card">
+                <div class="card-list">
+                    <article class="card">
+                        <figure class="card-image">
+                            <img src="../assets/images/project/PALFAT.png"
+                                alt="An orange painted blue, cut in half laying on a blue background" />
+                        </figure>
+                        <div class="card-header">
+                            <div class="project-card-heading">Project Title</div>
+                            <div class="project-card-subheading">Protecting Agriculture Lland From Theft And Animal
+                            </div>
+
+                            <div class="project-card-description">Overview</div>
+                            <div class="project-card-description-sub">
+                                This project aims to protect agricultural land through modern technologies like AI,
+                                Raspberry Pi, and real-time surveillance systems. The goal is to give farmers and
+                                landowners a smart monitoring solution that stops theft and keeps animals away from
+                                crops.
+                            </div>
+
+                            <div class="project-card-stack">Technology Stack</div>
+                            <div class="project-card-stack-logo">
+                                <div class="tech-stack">
+                                    <span class="tech">HTML</span>
+                                    <span class="tech">CSS</span>
+                                    <span class="tech">JavaScript</span>
+                                    <span class="tech">Python</span>
+                                    <span class="tech">PHP</span>
+                                    <span class="tech">MySQL</span>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-card-image">
-                        <img src="/assets/images/project/PALFAT.png">
-                    </div>
-                    <div class="project-card-description">
-                        <div class="project-name">Protecting Agriculture Land From Animals/Theft</div>
-                        <div class="uba-button" id="PALFTA">
-                            <div class="uba-button-name">View Website</div>
-                            <div class="uba-button-logo"><i class="fa-solid fa-angles-right"></i></div>
+                        <div class="card-footer">
+                            <div class="card-meta card-meta--date">
+                                <a href=" https://github.com/Rohan1023L/Protecting-Agriculture-Land-From-Theft-and-Animal.git"
+                                    target="_blank" class="project-link">
+                                    <i class="fa-solid fa-link"></i> &nbsp; Click Here
+                                </a>
+                            </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
+                <div class="card-list">
+                    <article class="card">
+                        <figure class="card-image">
+                            <img src="../assets/images/project/uba.png"
+                                alt="An orange painted blue, cut in half laying on a blue background" />
+                        </figure>
+                        <div class="card-header">
+                            <div class="project-card-heading">Project Title</div>
+                            <div class="project-card-subheading">Unnat Bharat Abhiyan
+                            </div>
+
+                            <div class="project-card-description">Overview</div>
+                            <div class="project-card-description-sub">
+                                I represented SVPCET by creating a website to display important information and
+                                resources. The project aimed to support rural development by using technology to improve
+                                accessibility. This effort improved communication between the institution and rural
+                                communities, promoting digital awareness.
+                            </div>
+
+                            <div class="project-card-stack">Technology Stack</div>
+                            <div class="project-card-stack-logo">
+                                <div class="tech-stack">
+                                    <span class="tech">HTML</span>
+                                    <span class="tech">CSS</span>
+                                    <span class="tech">JavaScript</span>
+                                    <span class="tech">PHP</span>
+                                    <span class="tech">MySQL</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-meta card-meta--date">
+                                <a href=" http://uba.stvincentngp.edu.in" target="_blank" class="project-link">
+                                    <i class="fa-solid fa-link"></i> &nbsp; Click Here
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
             </div>
         </section>
+
+        <span id="About-Me" style="padding: 2px;"></span>
+
 
         <div class="heading-for-section">
             <div id="heading-section-icon"><i class="fa-solid fa-address-card"></i></div>
@@ -530,9 +592,10 @@
                                 <button type="reset" id="input-button">Clear</button>
                             </div>
                         </div>
+
+                        <p id="status" style="padding-block: 10px;"></p>
                     </form>
 
-                    <p id="status" style="padding-bottom: 10px;"></p>
                 </div>
                 <div class="about-us-images">
                     <div> <img src="../assets/images/book.png" /></div>
@@ -545,10 +608,17 @@
 
     <!--Copyright Release-->
     <footer>
-        <p id="copyright">&copy; 2025 Rohan Ingle. All Rights Reserved.</p>
+        <p id="copyright">Made By Rohan1023L <span id="heart"> ❤️</span></p>
+
         <script>
-            const year = new Date().getFullYear();
-            document.getElementById("copyright").innerHTML = `&copy; ${year} Rohan Ingle. All Rights Reserved.`;
+            const heart = document.getElementById('heart');
+            setInterval(() => {
+                heart.style.animation = 'beat 0.8s ease-in-out';
+                setTimeout(() => {
+                    heart.style.animation = '';
+                }, 800);
+            }, 1000);
+
         </script>
     </footer>
 </body>
@@ -557,7 +627,9 @@
 <script src="../utils/text-animation.js"></script>
 <script src="../utils/ReadAnimation.js"></script>
 <script src="../utils/sliding-image.js"></script>
+<script src="../utils/download-resume.js"></script>
 <script src="../utils/social-media-handling.js"></script>
 <script src="../utils/skill-line.js"></script>
+<script src="../utils/navigation-and-header.js"></script>
 
 </html>

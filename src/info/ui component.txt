@@ -7,3 +7,9 @@
 <div><i class="fa-solid fa-file"></i></div>
 Download Resume
 </button>
+
+
+
+  <link rel="icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/Rohan1023L/Rohan-Js-Css-Files@main/assets/icons/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Rohan1023L/Rohan-Js-Css-Files@main/styles/index-v2.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
