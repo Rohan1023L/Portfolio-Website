@@ -1,5 +1,5 @@
 const container = document.querySelector(".site-header-heading");
-const texts = ["Rohan Ingle", "Rohan1023L"];
+const texts = ["Rohan Ingle", "Web Think's"];
 const typingSpeed = 150;
 const deletingSpeed = 75;
 const blinkDuration = 1500; 
