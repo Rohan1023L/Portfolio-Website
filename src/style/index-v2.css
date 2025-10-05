@@ -88,8 +88,17 @@ nav ul li a.active {
     z-index: 1000;
     font-size: 20px;
     font-size: 16px;
-    background-image: conic-gradient(black var(--scroll, 0%), transparent 0);
+    background: url("https://cdn.jsdelivr.net/gh/Rohan1023L/Portfolio-Website@main/src/assets/icons/logo.png") center/cover no-repeat;
+    -webkit-mask-image: conic-gradient(rgb(0 0 0 / 1) var(--scroll, 0%), transparent 0);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: cover;
+    mask-image: conic-gradient(rgb(0 0 0 / 1) var(--scroll, 0%), transparent 0);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: cover;
 }
+
 
 .scroll-top i {
     pointer-events: none;
