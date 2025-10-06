@@ -38,7 +38,7 @@ function updateView(force = false) {
     // Only re-render if breakpoint actually changed OR if forced
     if (newMode !== currentMode || force) {
         currentMode = newMode;
-        if (newMode === "desktop") {
+        if (newMode === "desktop" || "mobile") {
             showDescription();
         } else {
             resetView();
