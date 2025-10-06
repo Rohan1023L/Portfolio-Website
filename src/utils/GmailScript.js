@@ -1,6 +1,6 @@
 const form = document.getElementById('contact-form');
 const status = document.getElementById('status');
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw3cFgTjhVsqTJSko5O5NPwgX2iBqCP8TAq5KYhfTdWFqW5GAmvYPvoKc0B2XGmC5Le/exec"; // Paste Apps Script Web App URL here
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw3cFgTjhVsqTJSko5O5NPwgX2iBqCP8TAq5KYhfTdWFqW5GAmvYPvoKc0B2XGmC5Le/exec"; 
 
 form.addEventListener('submit', e => {
     e.preventDefault();
