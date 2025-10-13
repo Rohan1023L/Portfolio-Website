@@ -43,7 +43,7 @@ header {
 }
 
 nav ul li a.active {
-  color: #0077cc;
+    color: #0077cc;
 }
 
 #heart {
@@ -73,23 +73,6 @@ nav ul li a.active {
     }
 }
 
-.scroll-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 54px;
-    height: 54px;
-    border-radius: 50%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    z-index: 1000;
-    font-size: 20px;
-    font-size: 16px;
-    background-image: conic-gradient(rgb(80, 168, 255) var(--scroll, 0%), transparent 0);
-}
 
 .scroll-top i {
     pointer-events: none;
