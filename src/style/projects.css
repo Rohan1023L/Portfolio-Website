@@ -33,7 +33,7 @@ body {
 
 .project-card {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 
@@ -321,7 +321,7 @@ img {
 
 }
 
-@media (min-width: 1024px) and (max-width: 1880px){
+@media (min-width: 1024px) and (max-width: 1880px) {
     .project-card {
         display: flex;
         justify-content: space-around;
@@ -329,7 +329,34 @@ img {
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px){
+@media (min-width: 950px) and (max-width: 1024px) {
+
+    #heading-name {
+        justify-content: left;
+    }
+
+    #heading-section-icon {
+        margin-left: 40px;
+    }
+
+    .project-card {
+      display: flex;
+    }
+
+    .Project {
+        margin-inline: 10px;
+    }
+
+    .card-list {
+        width: 98%;
+        max-width: 400px;
+        margin-block: 10px;
+    }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 950px) {
 
     #heading-name {
         justify-content: left;

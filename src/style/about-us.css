@@ -121,18 +121,29 @@ body {
 
 .detail-text {
     cursor: pointer;
-    color: #0077cc;
+    color: black;
     margin-top: 10px;
     font-weight: bold;
     text-decoration: none;
+}
+
+#read-text {
+    border: 1px solid black;
+    padding-inline: 10px;
+    padding-block: 6px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
 }
 
 .detail-text span {
     cursor: pointer;
     margin: 0 5px;
     /* color: #444; */
-    color: #0077cc;
-    font-weight: bold;
+    color: black;
+    font-weight: 400;
     transition: color 0.3s ease, font-weight 0.3s ease;
     -webkit-transition: color 0.3s ease, font-weight 0.3s ease;
     -moz-transition: color 0.3s ease, font-weight 0.3s ease;
@@ -141,15 +152,13 @@ body {
 }
 
 .detail-text span:hover {
-    color: #2575fc;
+    color: black;
 
 }
 
 .detail-text span.active {
-    /* color: #2575fc; */
-    color: #444;
-    font-weight: bold;
-    text-decoration: underline;
+    background-color: black;
+    color: white;
 }
 
 .icon-with-input {
@@ -521,7 +530,8 @@ footer {
     }
 
     .about-us-images {
-        display: none;
+        display: flex;
+        align-items: center;
     }
 
     .about-us-contact-form>div {
@@ -530,12 +540,20 @@ footer {
 
     .About-Me>div {
         width: 100%;
+        padding-inline: 0;
+    }
+
+    .about-us-images img {
+        width: 150px;
     }
 
     .about-us-contact-form {
-        margin-left: 30px;
+        margin-left: 0px;
     }
 
+    .about-us-adjustment {
+        padding-left: 20px;
+    }
 
 }
 
@@ -559,6 +577,7 @@ footer {
 
     .about-us-contact-form>div {
         width: 100%;
+        padding-inline: 22px;
     }
 
     .about-me-personal-info {
@@ -571,17 +590,16 @@ footer {
     }
 
     .about-us-contact-form {
-        margin-inline: 20px;
+        margin-inline: 0px;
+
     }
-
-
 
     .social-media-link {
         flex-wrap: wrap;
     }
 
     .social-media-link .detail-text {
-        margin-top: 10px;
+        margin-top: 20px;
     }
 
     #status {
@@ -665,13 +683,11 @@ footer {
     .about-us-internship.open {
         display: block;
         transition: all 0.3s ease-in-out;
-        padding-inline: 8px;
+        padding-left: 22px;
+        padding-right: 6px;
         padding-block: 0px;
         font-size: 12px;
     }
-
-
-
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -720,7 +736,7 @@ footer {
     }
 
     .social-media-link .detail-text {
-        margin-top: 10px;
+        margin-top: 20px;
     }
 
     #status {
@@ -729,6 +745,7 @@ footer {
 
     .about-us-contact-form>div {
         width: 100%;
+        padding-inline: 10px;
     }
 
     #input-field {
