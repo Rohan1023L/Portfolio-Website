@@ -1,6 +1,6 @@
 const form = document.getElementById('contact-form');
 const status = document.getElementById('status');
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw3cFgTjhVsqTJSko5O5NPwgX2iBqCP8TAq5KYhfTdWFqW5GAmvYPvoKc0B2XGmC5Le/exec"; 
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwePYOgEE1l_v6et-AcYR6B1iuuKpJ8QyRH8GwV00WwXdtv7F8byBtUBPMx1rL_ERYP/exec"; 
 
 form.addEventListener('submit', e => {
     e.preventDefault();
