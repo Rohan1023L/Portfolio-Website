@@ -382,13 +382,12 @@ a:active {
     font-weight: 400;
 }
 
-    .ux-animation {
+ .ux-animation {
         display: flex;
         align-items: center;
         font-size: 0.950rem;
         color: #444746;
         font-weight: 400;
-
     }
 
     .dropping-texts {
@@ -396,7 +395,8 @@ a:active {
         align-items: center;
         padding-left: 6px;
         width: 100px;
-         font-family: "Playwrite NZ Guides", cursive;
+        font-family: "Playwrite NZ Guides", cursive;
+        font-weight: 400;
         text-align: left;
         height: 36px;
         vertical-align: -2px;
