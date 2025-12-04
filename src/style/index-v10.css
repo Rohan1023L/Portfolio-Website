@@ -386,6 +386,7 @@ a:active {
         display: flex;
         align-items: center;
         color: #444746;
+        font-size: 1.2rem;
         font-weight: 400;
     }
 
@@ -859,6 +860,10 @@ a:active {
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
+     .ux-animation {
+        font-size: 0.950rem;
+     }
+    
     .Home-Intro {
         padding-left: 36px;
         padding-right: 20px;
@@ -994,6 +999,9 @@ a:active {
     .mobile-nav-in {
         display: block;
     }
+     .ux-animation {
+        font-size: 0.950rem;
+     }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
@@ -1009,6 +1017,10 @@ a:active {
 
 @media (min-width: 481px) and (max-width: 767px) {
 
+     .ux-animation {
+        font-size: 0.950rem;
+     }
+    
     .web-dependency-lib {
         bottom: 10px;
     }
@@ -1162,7 +1174,10 @@ a:active {
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-
+    .ux-animation {
+        font-size: 0.950rem;
+     }
+    
     .Home-Slogaon {
         padding-bottom: 10px;
         margin-bottom: 30px;
