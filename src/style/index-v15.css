@@ -788,6 +788,7 @@ input[type=number]::-webkit-outer-spin-button {
     display: flex;
     justify-content: center;
     margin-top: 7.6rem;
+    margin-left: 20px;
 }
 
 .img-reflect img {
