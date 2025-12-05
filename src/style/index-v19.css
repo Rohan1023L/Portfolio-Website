@@ -1084,6 +1084,28 @@ a:active {
 
 @media (min-width: 481px) and (max-width: 767px) {
 
+      @keyframes fillBar {
+        from {
+            width: 0px;
+        }
+
+        to {
+            width: 200px;
+        }
+    }
+
+    .loader-animation {
+    width: 200px;
+    }
+
+    .loader-details {
+        width: 200px;
+    }
+
+    .loader-outside {
+        width: 200px;
+    }
+    
      .ux-animation {
         font-size: 0.950rem;
      }
@@ -1241,6 +1263,28 @@ a:active {
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
+      @keyframes fillBar {
+        from {
+            width: 0px;
+        }
+
+        to {
+            width: 200px;
+        }
+    }
+
+    .loader-animation {
+    width: 200px;
+    }
+
+    .loader-details {
+        width: 200px;
+    }
+
+    .loader-outside {
+        width: 200px;
+    }
+    
     .ux-animation {
         font-size: 0.950rem;
      }
