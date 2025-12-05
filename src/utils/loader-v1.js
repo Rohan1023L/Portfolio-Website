@@ -36,5 +36,6 @@ window.onload = function () {
         element_two.style.display = "";
         element_three.style.display = "";
         element_four.style.display = "";
-    }, 300);
+    }, 2000);
 };
+
