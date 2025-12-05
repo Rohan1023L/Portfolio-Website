@@ -21,8 +21,6 @@ let interval = setInterval(() => {
     }
 }, 20);
 
-
-// When page is fully loaded
 window.onload = function () {
 
     percentage = 100;
@@ -36,6 +34,7 @@ window.onload = function () {
         element_two.style.display = "";
         element_three.style.display = "";
         element_four.style.display = "";
-    }, 2000);
+    }, 1000);
 };
+
 
