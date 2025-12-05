@@ -350,17 +350,70 @@ a:active {
     text-align: center;
 }
 
-/* Hide number input arrows in all browsers */
-input[type=number] {
-    -moz-appearance: textfield; /* Firefox */
+@keyframes fillBar {
+    from {
+        width: 0px;
+    }
+
+    to {
+        width: 250px;
+    }
 }
 
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;   /* Chrome, Safari, Edge */
-    margin: 0;
+.splash-loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: -70px;
+    width: 100%;
+    border: 1px solid red;
 }
 
+.splash-loader {
+    transition: opacity 0.4s ease;
+}
+
+.splash-loader.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.loader-animation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 400px;
+}
+
+.loader-details {
+    font-family: "Roboto Mono", monospace;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 400;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+
+.loader-outside {
+    border: 1.5px solid black;
+    height: 22px;
+    width: 250px;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+#loader-fill {
+    background-color: black;
+    height: 100%;
+    width: 0%;
+    box-sizing: border-box;
+    transition: width 0.15s linear;
+}
 
 .Home {
     width: 100%;
