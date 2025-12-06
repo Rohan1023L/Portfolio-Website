@@ -367,7 +367,6 @@ a:active {
     height: 100vh;
     margin-top: -70px;
     width: 100%;
-    border: 1px solid red;
 }
 
 .splash-loader {
