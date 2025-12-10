@@ -2,12 +2,12 @@
 const slides = [
   {
     img: "https://cdn.jsdelivr.net/gh/Rohan1023L/Portfolio-Website@main/src/assets/images/Who-Am-I-v2.png",
-    heading: "|| Karmanye Vadhikaraste ||",
+    heading: "Karmanye Vadhikaraste",
     caption: "<div>Focus on action, not the reward.</div>",
   },
   {
     img: "https://cdn.jsdelivr.net/gh/Rohan1023L/Portfolio-Website@main/src/assets/images/What-I-Do-v1.png",
-    heading: "|| Work Is Worship ||",
+    heading: "Work Is Worship",
     caption: "<div>When done with purpose, it becomes art.</div>",
   }
 ];
