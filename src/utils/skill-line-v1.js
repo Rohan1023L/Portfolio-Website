@@ -31,5 +31,7 @@ function buildTimeline() {
     });
 }
 
-window.addEventListener("load", buildTimeline);
+window.addEventListener("load", () => {
+    setTimeout(buildTimeline, 700); // wait for animations
+});
 window.addEventListener("resize", buildTimeline);
