@@ -26,7 +26,6 @@ body {
 
 .Skill {
     width: 100%;
-    min-height: 100%; /* ✅ Added */
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -61,8 +60,6 @@ body {
 
 .dot-line {
     position: absolute;
-    top: 0;            /* ✅ Added */
-    bottom: 0;         /* ✅ Added */
     left: 50%;
     transform: translateX(-50%);
     width: 2px;
@@ -109,15 +106,6 @@ body {
     transform: translateY(20px);
     animation: slideUp 0.6s ease-out forwards;
     animation-delay: 200ms;
-}
-
-.skill-container {
-    will-change: transform, opacity; /* ✅ Added */
-}
-
-.skill-line,
-.dot-line {
-    transform: translateZ(0); /* ✅ Added */
 }
 
 .skill-language-container {
