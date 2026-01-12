@@ -217,4 +217,10 @@ body {
     .specific-language-caption {
         display: none;
     }
+
+    #timeline {
+    width: 40px;
+    position: relative;
+    min-height: 100%;
+}
 }
