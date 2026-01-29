@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const text = document.querySelector(".loader-percentage");
     const loaderFill = document.getElementById("loader-fill");
 
-    // Hide page sections
     element_one.style.visibility = "hidden";
     element_two.style.visibility = "hidden";
     element_three.style.visibility = "hidden";
@@ -17,9 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let percentage = 0;
 
-    // Fake smooth progress (fast)
     let progressInterval = setInterval(() => {
-        if (percentage < 90) {   // stop at 90% until real finish
+        if (percentage < 90) {  
             percentage++;
             text.textContent = percentage + " %";
             loaderFill.style.width = percentage + "%";
@@ -43,7 +41,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 400);
     }
 
-    // Wait only for IMPORTANT images (hero section)
     const heroImages = document.querySelectorAll(".Home img");
 
     let loadedImages = 0;
@@ -67,6 +64,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // ⏱ Safety timeout (never let loader exceed 2.5s)
     setTimeout(finishLoading, 2500);
 });
+
