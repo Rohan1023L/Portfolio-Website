@@ -698,6 +698,12 @@ footer {
         padding-bottom: 0;
     }
 
+    .start-rating-conatiner {
+    margin-block: 20px;
+        display:flex;
+    flex-wrap: wrap;
+}
+
     .About-Me>div {
         width: 100%;
     }
