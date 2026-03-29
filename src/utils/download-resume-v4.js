@@ -1,11 +1,10 @@
 downloadBtn.addEventListener('click', () => {
-    const fileUrl = "https://drive.google.com/uc?export=download&id=1NHd00o6Elkr_8ZR3hZIKO4iZIcKJ3_Oi";
+    const fileUrl = "https://drive.google.com/uc?export=download&id=1C4nmvONJ5SdSXixvb03P1Pgs8MAkWWsW";
 
     downloadBtn.innerHTML = "Downloading <span class='dot'>.</span><span class='dot'>.</span><span class='dot'>.</span>";
     downloadBtn.style.fontSize = "14px";
     downloadBtn.disabled = true;
 
-    // ✅ Create hidden iframe (no new tab)
     const iframe = document.createElement('iframe');
     iframe.style.display = 'none';
     iframe.src = fileUrl;
@@ -16,6 +15,6 @@ downloadBtn.addEventListener('click', () => {
         downloadBtn.innerHTML = "<div><i class='fa-solid fa-download'></i></div> Resume";
         downloadBtn.disabled = false;
 
-        document.body.removeChild(iframe); // cleanup
+        document.body.removeChild(iframe);
     }, 3000);
 });
