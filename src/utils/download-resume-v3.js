@@ -5,15 +5,17 @@ downloadBtn.addEventListener('click', () => {
     downloadBtn.style.fontSize = "14px";
     downloadBtn.disabled = true;
 
-    const a = document.createElement('a');
-    a.href = fileUrl;
-    a.target = "_blank";
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
+    // ✅ Create hidden iframe (no new tab)
+    const iframe = document.createElement('iframe');
+    iframe.style.display = 'none';
+    iframe.src = fileUrl;
+
+    document.body.appendChild(iframe);
 
     setTimeout(() => {
         downloadBtn.innerHTML = "<div><i class='fa-solid fa-download'></i></div> Resume";
         downloadBtn.disabled = false;
+
+        document.body.removeChild(iframe); // cleanup
     }, 3000);
 });
